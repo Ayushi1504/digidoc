@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<body background='1.jpg'>
+<div style='border:2px solid green'>
+<table bgcolor="green" width="100%">
+<tr>
+<td><img src="icon.png" alt="icon"></td>
+<td><img src="digidoc.png" alt="digidoc" height="115"></td>
+<td align="right">
+<table bgcolor="green" cellspacing="5"><tr>
+<td><a href="login.html"><img src="login.png"></a></td>
+<td><a href="register.html"><img src="register.png"></a></td>
+<td><a href="home.php"><img src="home.png"></a></td></tr></table>
+</td>
+</tr></table>
+<div>
+<center>
+<h1>Create a new account</h1>
+<div style='border:4px solid green; padding-left:100px; padding-right:100px; background-color:white'>
+<form name="patform" action="patregister.php" method="POST">
+<table>
+<tr>
+<td>Name:</td>
+<td><input type="text" name="patname" id="patname" required></td>
+</tr>
+<tr>
+<td>Age:</td>
+<td><input type="text" name="patage" id="patage" required></td>
+</tr>
+<tr><td>Gender</td> 
+<td><input type="radio" name="gender" id="gender" value="male">Male<br>
+<input type="radio" name="gender" id="gender" value="female">Female</td>
+</tr>
+<tr>
+<td>Present Address:</td>
+<td><textarea rows="4" cols="50" name="pres_address" id="pres_address" required> </textarea></td>
+</tr>
+<tr>
+<td>Permanent Address:</td>
+<td><textarea rows="4" cols="50" name="perm_address" id="pres_address" required> </textarea></td>
+</tr>
+<tr>
+<td>Present Zip Code:</td>
+<td><input type="text" name="zipcode" id="zipcode" required></td>
+</tr>
+<tr>
+<td>Contact:</td>
+<td><input type="text" name="patmob" id="patmob" required></td>
+</tr>
+<tr>
+<td>Email:</td>
+<td><input type="text" name="patemail" id="patemail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required></td>
+</tr>
+<tr>
+<td>Username:</td>
+<td><input type="text" name="patusername" id="patusername" required></td>
+</tr>
+<tr>
+<td>Password:</td>
+<td><input type="password" name="patpassword" id="patpassword" required></td>
+</tr>
+<tr>
+<td colspan="2" align="center">
+<input type="submit"  value="Submit" ></td>
+</tr>
+</table>
+</form>
+</div>
+</center>
+</body>
+</html>

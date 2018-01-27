@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 2px 16px;
+    margin-top: 50px;
+    border: 1px solid #888;
+    width: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    background-color: #5cb85c;
+    color: white;
+}
+</style>
+</head>
+<body background='1.jpg'>
+<div style='border:2px solid green'>
+<table bgcolor="green" width="100%">
+<tr>
+<td><img src="icon.png" alt="icon"></td>
+<td><img src="digidoc.png" alt="digidoc" height="115"></td>
+<td align="right">
+<table bgcolor="green" cellspacing="5">
+<tr>
+<td><a href="home.php"><img src="home.png"></a></td>
+<td><a href="logout.php"><img src="logout.png"></a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<div>
+<center>
+<a href="patienthistory.php"><button type="button">See Medical History</button></a>&emsp;
+<a href="reply.php"><button type="button">View Doctor's Reply</button></a>&emsp;
+<a href="Hospital_query.html"><button type="button">Search Nearby Hospitals</button></a>&emsp;
+<a href="Chemist_query.html"><button type="button">Search Nearby Chemists</button></a>&emsp;
+<a href="Feedback.html"><button type="button">Feedback</button></a>
+</center>
+<div class="modal-content">
+      <form action="query.php" method="post" id="f1">
+      <h3><u>Enter Your Query</u></h3>
+      <br><br>
+      Enter your name: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="nm"><br><br>
+      Enter contact no: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" maxlength="10"><br><br>
+      Select specialisation:
+      <select name="spl">
+      	<option value="allergist">Allergist</option>
+        <option value="cardiologist">Cardiologist</option>
+        <option value="dermatologist">Dermatologist</option>
+        <option value="gastroenterologist">Gastroenterologist</option>
+        <option value="gynecologist">Gynecologist</option>
+        <option value="hepatologist">Hepatologist</option>
+	<option value="neurologicalsurgeon">Neurological Surgeon</option>
+	<option value="neurologist">Neurologist</option>
+	<option value="otolaryngologist">Otolaryngologist</option>
+	<option value="pathologist">Pathologist</option>
+	<option value="pediatrician">Pediatrician</option>
+	<option value="psychiatrist">Psychiatrist</option>
+	<option value="radiologist">Radiologist</option>
+	<option value="surgeon">Surgeon</option>
+      </select><br><br>
+      Enter your query: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<textarea form="f1" name="qry" rows="4" cols="75"></textarea><br><br>
+      <button type="submit" value="Submit">Submit</button><br><br>
+      </form>
+</div>
+</body>
+</html>
